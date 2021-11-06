@@ -1,2 +1,2 @@
 # primeiras-experiencias
-Primeiras programações, em C++
+Primeiras programações, em C

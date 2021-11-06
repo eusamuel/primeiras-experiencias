@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main () 
+
+{
+    float a, b;
+    
+    setlocale (LC_ALL, "Portuguese");
+    
+    printf ("\n Digite um número meu amigo: ");
+    scanf ("%f", &a);
+    printf ("\n Meu amigo, por favor digite outro número: ");
+    scanf ("%f", &b);
+    
+    if (a>b)
+    printf ("\n O número %f é maior", a);
+    else if (b<a)
+    printf ("\n O número %f é maior", b);
+    else
+    printf ("\n Ou irmão, esses números são iguais cara!");
+    
+    return (0);
+}

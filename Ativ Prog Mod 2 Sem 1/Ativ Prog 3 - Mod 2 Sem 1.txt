@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main () 
+
+{
+    int nmr;
+    
+    setlocale (LC_ALL, "Portuguese");
+    
+    printf ("\n Digite um número inteiro entre 1 e 7: ");
+    scanf ("%d", &nmr);
+    
+    switch (nmr)
+    {
+        case 1:
+        printf ("\n Esse número corresponde ao domingo!");
+        break;
+        case 2:
+        printf ("\n Esse número corresponde a segunda-feira!");
+        break;
+        case 3:
+        printf ("\n Esse número corresponde a terça-feira!");
+        break;
+        case 4:
+        printf ("\n Esse número corresponde a quarta-feira!");
+        break;
+        case 5:
+        printf ("\n Esse número corresponde a quinta-feira!");
+        break;
+        case 6:
+        printf ("\n Esse número corresponde a sexta-feira!");
+        break;
+        case 7:
+        printf ("\n Esse número corresponde ao sábado!");
+        break;
+    }
+    return (0);
+}

@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main () 
+
+{
+    int x;
+    
+    setlocale (LC_ALL, "Portuguese");
+    
+    printf ("\n Digite um número inteiro de 0 a 10: ");
+    scanf ("%d", &x);
+    
+    switch (x)
+    {
+        case 0:
+        printf ("\n O número %d escrito por extenso é ZERO!", x);
+        break;
+        case 1:
+        printf ("\n O número %d escrito por extenso é UM!", x);
+        break;
+        case 2:
+        printf ("\n O número %d escrito por extenso é DOIS!", x);
+        break;
+        case 3:
+        printf ("\n O número %d escrito por extenso é TRÊS!", x);
+        break;
+        case 4:
+        printf ("\n O número %d escrito por extenso é QUATRO!", x);
+        break;
+        case 5:
+        printf ("\n O número %d escrito por extenso é CINCO!", x);
+        break;
+        case 6:
+        printf ("\n O número %d escrito por extenso é SEIS!", x);
+        break;
+        case 7:
+        printf ("\n O número %d escrito por extenso é SETE!", x);
+        break;
+        case 8:
+        printf ("\n O número %d escrito por extenso é OITO!", x);
+        break;
+        case 9:
+        printf ("\n O número %d escrito por extenso é NOVE!", x);
+        break;
+        case 10:
+        printf ("\n O número %d escrito por extenso é DEZ!", x);
+        break;
+    }
+    return (0);
+}

@@ -1,0 +1,40 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+/*NÃO CONSEGUI FAZER, NÃO ENTENDI COMO TRANSFORMAR UMA LETRA DIGITADA PELO USUÁRIO PARA UM NÚMERO PARA SER 
+USADO NO CASE, E MESMO SE SOUBESSE OS CÁUCULOS NÃO ESTÃO SENDO FEITOS!*/
+
+int main () 
+
+{
+    char plan;
+    float pay, up, fpay;  //pay: pagamento, fpay: pagamento final(final pay), up: aumento.
+    
+    setlocale (LC_ALL, "Portuguese");
+    
+    printf ("\n Para saber qual será o aumento por favor, digite o número do plano de trabalho \n A=1, B=2, C=3: ");
+    scanf ("%c", &plan);
+    printf ("\n Agora preciso saber qual é o salário do funcionário em questão: ");
+    scanf ("%f", &pay);
+    
+    switch (plan)
+    {
+        case 1:
+        up = 0.1*pay;
+        fpay = pay+up;
+        printf ("\n O funcionário terá um aumento de 10 por cento!\n Seu salário agora será de %f reais", fpay);
+        break;
+        case 2:
+        up = 0.15*pay;
+        fpay = pay+up;
+        printf ("\n O funcionário terá um aumento de 10 por cento!\n Seu salário agora será de %f reais", fpay);
+        break;
+        case 3:
+        up = 0.2*pay;
+        fpay = pay+up;
+        printf ("\n O funcionário terá um aumento de 10 por cento!\n Seu salário agora será de %f reais", fpay);
+        break;
+    }
+    return (0);
+}

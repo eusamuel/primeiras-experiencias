@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main () 
+
+{
+    int cod, amount;
+    float tpay;  //tpay: total a pagar(total pay).
+    
+    setlocale (LC_ALL, "Portuguese");
+    
+    printf ("\n Por favor, digite o código do pedido: ");
+    scanf ("%d", &cod);
+    printf ("\n Digite agora a quantidade de unidades do pedido em questão: ");
+    scanf ("%d", &amount);
+    
+    switch (cod)
+    {
+        case 100:
+        tpay = 1.2*amount;
+        printf ("\n O valor total do lanche é %f reais", tpay);
+        break;
+        case 101:
+        tpay = 1.3*amount;
+        printf ("\n O valor total do lanche é %f reais", tpay);
+        break;
+        case 102:
+        tpay = 1.5*amount;
+        printf ("\n O valor total do lanche é %f reais", tpay);
+        break;
+        case 103:
+        tpay = 1.2*amount;
+        printf ("\n O valor total do lanche é %f reais", tpay);
+        break;
+        case 104:
+        tpay = 1.3*amount;
+        printf ("\n O valor total do lanche é %f reais", tpay);
+        break;
+    }
+    return (0);
+}

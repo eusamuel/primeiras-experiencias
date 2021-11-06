@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main () 
+
+{
+    float a, b, m;
+    
+    setlocale (LC_ALL, "Portuguese");
+    
+    printf ("\n Digite a primeira nota do Aluno: ");
+    scanf ("%f", &a);
+    printf ("\n Digite a segundo nota do aluno: ");
+    scanf ("%f", &b);
+    
+    m = (a+b)/2;
+    
+    
+if (m >= 7)
+    {system ("color 2");
+    printf ("\n O aluno foi aprovado!");}
+    else if (m>=3 && m<7)
+    {system ("color 6");
+    printf ("\n Este aluno está de recuperação!");}
+    else
+    {system ("color 4");
+    printf ("\n Infelizmente o aluno foi reprovado.");}
+    
+    return (0);
+}

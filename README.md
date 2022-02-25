@@ -1,2 +1,2 @@
 # primeiras-experiencias
-Primeiras programas, em C
+Primeiros programas, em C
